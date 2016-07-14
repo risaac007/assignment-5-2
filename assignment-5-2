@@ -1,0 +1,112 @@
+# assignment-5-2
+
+Building1.java
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication53;
+
+/**
+ *
+ * @author hp1
+ */
+public class Building1 extends Building{
+    String colour;
+    
+    @Override
+    void display(){
+    System.out.println("the details of building1 are" );
+    super.display();
+    System.out.println("the colour is"+colour);
+    
+    
+    
+}}
+
+
+Building 2
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication53;
+
+/**
+ *
+ * @author hp1
+ */
+public class Building2 extends Building {
+    
+    
+    @Override
+    void display(){
+     System.out.println("the details of building2 are" );    
+      super.display();
+      
+      
+        
+    }
+}
+
+
+Main method
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication53;
+
+/**
+ *
+ * @author hp1
+ */
+class Building{
+    String name;
+    String road;
+    
+    void display(){
+        System.out.println("the name of the building is"+name);
+        System.out.println("the name of the road near the building is"+road);
+        
+    }
+}
+
+
+public class JavaApplication53 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Building1 b1=new Building1();
+        Building2 b2=new Building2();
+        b1.name="TAJ";
+        b1.road="M G Road";
+        b1.colour="White";
+        b1.display();
+        b2.name="Marriot";
+        b2.road="MJ Road";
+        b2.display();
+        
+        
+        
+        
+        
+    }
+    
+}
+
+
+
+
